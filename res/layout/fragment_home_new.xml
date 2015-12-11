@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yunruiinfo.iclass.student.view.ExpandScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iclass="http://schemas.android.com/apk/res/com.yunruiinfo.iclass.student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbarThumbVertical="@drawable/scrollbar_v" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/home_new_banner"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <com.yunruiinfo.iclass.student.view.ExpandGridView
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:listSelector="@drawable/bg_gridview_selector"
+            android:numColumns="4"
+            iclass:divider="@color/gridview_divider_color"
+            iclass:dividerWidth="1px"
+            iclass:mostHeight="true" />
+
+        <FrameLayout
+            android:id="@+id/home_new_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+
+</com.yunruiinfo.iclass.student.view.ExpandScrollView>

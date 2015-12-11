@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_appstart"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e5ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/flip"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_appstart_flip" />
+
+        <RelativeLayout
+            android:id="@+id/app_title_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/logo"
+            android:orientation="vertical"
+            android:paddingLeft="20dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#ff444444"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/title_desp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:text="课程信息 在线测评 课堂考勤尽在掌握"
+                android:textColor="#ff444444"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/jishuzhichi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_desp"
+                android:text="技术支持:青岛云瑞科技有限公司"
+                android:textColor="#ff444444"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/flip"
+            android:layout_toRightOf="@+id/app_title_layout"
+            android:maxLines="2"
+            android:paddingLeft="13dp"
+            android:textColor="#ff444444"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/text_shadow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/title_layout"
+        android:background="#cc000000"
+        android:maxLines="2"
+        android:padding="20dp"
+        android:text="正在进入爱课堂，请稍候..."
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>

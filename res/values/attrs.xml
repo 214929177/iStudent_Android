@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandGridView">
+        <!-- 分割线颜色 -->
+        <attr name="divider" format="color" />
+        <!-- 分割线宽度 -->
+        <attr name="dividerWidth" format="dimension" />
+        <!-- 根据内容设定高度 -->
+        <attr name="mostHeight" format="boolean" />
+    </declare-styleable>
+
+</resources>

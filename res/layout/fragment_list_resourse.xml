@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8.0dp"
+        android:text="该课程的教学材料："
+        android:textSize="14.0sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dp"
+        android:background="#e9e9e9" />
+
+    <ListView
+        android:id="@+id/course_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/white"
+        android:divider="@color/listview_divider_color"
+        android:dividerHeight="1px"
+        android:drawSelectorOnTop="false"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/bg_listview_selector"
+        android:overScrollMode="never" />
+
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="暂无课程数据"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+</LinearLayout>

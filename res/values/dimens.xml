@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="slidingmenu_offset">120dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="pager_mark_width">15dp</dimen>
+    <dimen name="pager_mark_height">2dp</dimen>
+    <dimen name="pager_mark_margin">2dp</dimen>
+
+</resources>

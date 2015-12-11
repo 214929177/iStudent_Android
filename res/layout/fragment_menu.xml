@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/account_setting_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_account_tile"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp" >
+
+        <FrameLayout
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="20dp" >
+
+            <ImageView
+                android:id="@+id/register_head"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_account_avatar" />
+
+            <ImageView
+                android:id="@+id/register_head_frame"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/icon_account_avatar_frame" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/realname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请登录..."
+                android:textColor="#ff888888"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="青岛云瑞信息科技有限公司"
+        android:textColor="#ff909090"
+        android:textSize="10sp" />
+
+    <ListView
+        android:id="@+id/slidingmenu_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/currentversion"
+        android:layout_below="@+id/account_layout"
+        android:layout_marginTop="27.0dip"
+        android:cacheColorHint="@color/transparent"
+        android:divider="#e1e1e1"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/transparent"
+        android:scrollbarThumbVertical="@drawable/xg_scrollbar" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_accountsetting" />
+
+</RelativeLayout>

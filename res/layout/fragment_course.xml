@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:iclass="http://schemas.android.com/apk/res/com.yunruiinfo.iclass.student"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/course_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" />
+
+    <com.yunruiinfo.iclass.student.view.ExpandGridView
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/course_banner"
+        android:focusable="false"
+        android:listSelector="@drawable/bg_gridview_selector"
+        android:numColumns="3"
+        android:scrollbarStyle="outsideOverlay"
+        iclass:divider="@color/gridview_divider_color"
+        iclass:dividerWidth="1px" />
+
+</RelativeLayout>

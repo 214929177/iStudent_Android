@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="menu_home"/>
+    <item type="id" name="menu_course"/>
+    <item type="id" name="menu_user"/>
+    <item type="id" name="menu_info"/>
+    <item type="id" name="menu_school"/>
+    <item type="id" name="menu_setting"/>
+    <item type="id" name="menu_about"/>
+    <item type="id" name="menu_feedback"/>
+</resources>

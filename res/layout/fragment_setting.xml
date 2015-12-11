@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/setting_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true" />
+
+    <GridView
+        android:id="@+id/icons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/setting_banner"
+        android:columnWidth="97.0dip"
+        android:focusable="false"
+        android:listSelector="@drawable/transparent"
+        android:numColumns="auto_fit"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:stretchMode="spacingWidth"
+        android:verticalSpacing="13.0dip" />
+
+</RelativeLayout>
